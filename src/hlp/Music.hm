@@ -1,0 +1,42 @@
+ 
+// Commands (ID_* and IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+HID_OPTIONS                             0x18003
+HID_VIEW_OPTIONS                        0x18004
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_MAIN_MENU                          0x20091
+HIDR_RIGHT1                             0x2012C
+HIDR_RIGHT2                             0x2012D
+HIDR_RIGHT3                             0x2012E
+HIDR_RIGHT4                             0x2012F
+HIDR_RIGHT5                             0x20130
+HIDR_RIGHT6                             0x20131
+HIDR_RIGHT7                             0x20132
+HIDR_RIGHT8                             0x20133
+HIDR_RIGHT9                             0x20134
+HIDR_RIGHT10                            0x20135
+HIDR_WRONG1                             0x20190
+HIDR_WRONG2                             0x20191
+HIDR_WRONG3                             0x20192
+HIDR_WRONG4                             0x20193
+HIDR_WRONG5                             0x20194
+HIDR_WRONG6                             0x20195
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_MUSIC_DIALOG                       0x20066
+HIDD_NOTES                              0x20081
+HIDD_PAGE_NOTES                         0x20081
+HIDD_MAIN                               0x20084
+HIDD_PAGE_ABOUT                         0x20086
+HIDD_PAGE_WELCOME                       0x20089
+HIDD_PAGE_RHYTHM                        0x2008E
+HIDD_PAGE_PITCH                         0x2008F
+HIDD_PAGE_SYMBOLS                       0x20090
+HIDD_PAGE_PROGRESS                      0x20092
+ 
+// Frame Controls (IDW_*) 

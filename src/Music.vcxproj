@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Music.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Music.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Music.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Music.exe</OutputFile>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Music.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Music.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Music.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Music.exe</OutputFile>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CtrlNotes.cpp" />
+    <ClCompile Include="CtrlStaff.cpp" />
+    <ClCompile Include="DialogMain.cpp" />
+    <ClCompile Include="LogTrace.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="Page.cpp" />
+    <ClCompile Include="PageAbout.cpp" />
+    <ClCompile Include="PageNotes.cpp" />
+    <ClCompile Include="PagePitch.cpp" />
+    <ClCompile Include="PageProgress.cpp" />
+    <ClCompile Include="PageRhythms.cpp" />
+    <ClCompile Include="PageSymbols.cpp" />
+    <ClCompile Include="PageWelcome.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CtrlNotes.h" />
+    <ClInclude Include="CtrlStaff.h" />
+    <ClInclude Include="DialogMain.h" />
+    <ClInclude Include="LogTrace.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="Page.h" />
+    <ClInclude Include="PageAbout.h" />
+    <ClInclude Include="PageNotes.h" />
+    <ClInclude Include="PagePitch.h" />
+    <ClInclude Include="PageProgress.h" />
+    <ClInclude Include="PageRhythms.h" />
+    <ClInclude Include="PageSymbols.h" />
+    <ClInclude Include="PageWelcome.h" />
+    <CustomBuild Include="Resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\Music.hpj">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hcw /C /E /M "hlp\%(Filename).hpj" 
+if errorlevel 1 goto :Error 
+if not exist "hlp\%(Filename).hlp" goto :Error 
+copy "hlp\%(Filename).hlp" $(OutDir) 
+goto :done 
+:Error 
+echo hlp\%(Filename).hpj(1) : error: 
+type "hlp\%(Filename).log" 
+:done </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\$(InputName).hlp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hcw /C /E /M "hlp\%(Filename).hpj" 
+if errorlevel 1 goto :Error 
+if not exist "hlp\%(Filename).hlp" goto :Error 
+copy "hlp\%(Filename).hlp" $(OutDir) 
+goto :done 
+:Error 
+echo hlp\%(Filename).hpj(1) : error: 
+type "hlp\%(Filename).log" 
+:done </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).hlp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="res\Company.ico" />
+    <CustomBuild Include="res\ico00001.ico" />
+    <CustomBuild Include="res\icon1.ico" />
+    <CustomBuild Include="res\Intaglio green on black (256 color only).ico" />
+    <CustomBuild Include="res\Music.ico" />
+    <CustomBuild Include="res\Music.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\note.bmp" />
+    <CustomBuild Include="res\note2.ico" />
+    <CustomBuild Include="res\Piano.ico" />
+    <CustomBuild Include="res\Piano2.ico" />
+    <CustomBuild Include="res\staff.bmp" />
+    <CustomBuild Include="hlp\AfxDlg.rtf">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="hlp\Music.cnt">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+    <CustomBuild Include="res\right1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right10.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right3.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right4.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right5.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right6.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right7.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right8.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\right9.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong1.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong2.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong3.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong4.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong5.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\wrong6.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Music.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

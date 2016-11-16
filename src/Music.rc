@@ -1,0 +1,367 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Music.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Music.ico"
+IDI_NOTE                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_NOTE_2              ICON    DISCARDABLE     "res\\note2.ico"
+IDI_COMPANY             ICON    DISCARDABLE     "res\\Intaglio green on black (256 color only).ico"
+IDI_PIANO2              ICON    DISCARDABLE     "res\\Piano2.ico"
+IDI_PIANO               ICON    DISCARDABLE     "res\\Piano.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_NOTES DIALOGEX 0, 0, 320, 230
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Level",IDC_STATIC,7,9,27,10
+    COMBOBOX        IDC_CBO_LEVEL,38,7,87,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Staff",IDC_STATIC,132,9,22,10
+    COMBOBOX        IDC_CBO_STAFF,157,7,70,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Input",IDC_STATIC,238,9,22,10
+    COMBOBOX        IDC_CBO_INPUT,261,7,52,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_PIC_STAFF,"Static",SS_WHITERECT,7,26,306,143,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_PIC_NOTES,"Static",SS_WHITERECT | SS_NOTIFY,7,170,
+                    306,53,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Start",IDC_BTN_START,247,209,26,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Pause",IDC_BTN_PAUSE,230,209,26,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Stop",IDC_BTN_STOP,287,209,26,14,NOT WS_VISIBLE
+    CONTROL         "Log to &File",IDC_CHK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,67,164,51,13
+END
+
+IDD_MAIN DIALOGEX 0, 0, 348, 277
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Music"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TBC,"SysTabControl32",TCS_HOTTRACK,7,7,334,
+                    243,WS_EX_STATICEDGE
+    PUSHBUTTON      "E&xit",IDC_BTN_CLOSE,291,254,50,16
+END
+
+IDD_PAGE_ABOUT DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_COMPANY,IDC_STATIC,15,55,20,20,SS_SUNKEN
+    LTEXT           "Music Version 1.0",IDC_STATIC,43,20,119,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2001 Intaglio Software",IDC_STATIC,43,59,
+                    129,8
+    ICON            IDI_PIANO,IDC_STATIC,15,15,20,20,SS_SUNKEN
+END
+
+IDD_PAGE_WELCOME DIALOG DISCARDABLE  0, 0, 269, 151
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Welcome to Music Drill",IDC_LBL_WELCOME,7,18,188,11
+    LTEXT           "Choose an activity by clicking on the appropriate tab above.",
+                    IDC_STATIC,7,80,228,13
+    COMBOBOX        IDC_CBO_NAME,42,58,97,14,CBS_DROPDOWN | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name",IDC_STATIC,7,58,31,11,NOT WS_VISIBLE
+    LTEXT           "Enter or select your name from the list:",IDC_STATIC,7,
+                    38,228,13,NOT WS_VISIBLE
+END
+
+IDD_PAGE_RHYTHM DIALOGEX 0, 0, 298, 198
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PIC_STAFF,"Static",SS_WHITERECT,7,26,213,143,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_PAGE_PITCH DIALOG DISCARDABLE  0, 0, 255, 159
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Play",IDC_BTN_PLAY,84,74,60,21
+    LTEXT           "note",IDC_LBL_NOTE,82,102,141,16
+    PUSHBUTTON      "Play C",IDC_BTN_PLAY2,7,74,60,21
+    LTEXT           "This will help you build interval and pitch recognition.",
+                    IDC_LBL_INSTRUCTIONS,7,7,235,12
+    COMBOBOX        IDC_CBO_TEST,84,25,130,46,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Test",IDC_STATIC,7,26,57,11
+END
+
+IDD_PAGE_SYMBOLS DIALOG DISCARDABLE  0, 0, 245, 149
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PAGE_PROGRESS DIALOG DISCARDABLE  0, 0, 295, 175
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Details your progress over time.",IDC_STATIC,7,7,281,18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Music MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Music\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Music.EXE\0"
+            VALUE "ProductName", "Music Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PAGE_NOTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_PAGE_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_PAGE_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PAGE_RHYTHM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_PAGE_PITCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_PAGE_SYMBOLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_PAGE_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_STAFF               BITMAP  DISCARDABLE     "res\\staff.bmp"
+IDB_NOTE                BITMAP  DISCARDABLE     "res\\note.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "&Options",                    ID_OPTIONS
+    MENUITEM "&Options",                    ID_VIEW_OPTIONS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_RIGHT1              WAVE    DISCARDABLE     "res\\right1.wav"
+IDR_RIGHT2              WAVE    DISCARDABLE     "res\\right2.wav"
+IDR_RIGHT3              WAVE    DISCARDABLE     "res\\right3.wav"
+IDR_RIGHT4              WAVE    DISCARDABLE     "res\\right4.wav"
+IDR_RIGHT5              WAVE    DISCARDABLE     "res\\right5.wav"
+IDR_RIGHT6              WAVE    DISCARDABLE     "res\\right6.wav"
+IDR_RIGHT7              WAVE    DISCARDABLE     "res\\right7.wav"
+IDR_RIGHT8              WAVE    DISCARDABLE     "res\\right8.wav"
+IDR_RIGHT9              WAVE    DISCARDABLE     "res\\right9.wav"
+IDR_RIGHT10             WAVE    DISCARDABLE     "res\\right10.wav"
+IDR_WRONG6              WAVE    DISCARDABLE     "res\\wrong6.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Music..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Music.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
