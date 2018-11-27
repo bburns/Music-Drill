@@ -1,12 +1,12 @@
- 
-// Commands (ID_* and IDM_*) 
+  
+// Commands (ID_* and IDM_*)  
 HIDM_ABOUTBOX                           0x10010
 HID_OPTIONS                             0x18003
 HID_VIEW_OPTIONS                        0x18004
- 
-// Prompts (IDP_*) 
- 
-// Resources (IDR_*) 
+  
+// Prompts (IDP_*)  
+  
+// Resources (IDR_*)  
 HIDR_MAINFRAME                          0x20080
 HIDR_MAIN_MENU                          0x20091
 HIDR_RIGHT1                             0x2012C
@@ -25,8 +25,8 @@ HIDR_WRONG3                             0x20192
 HIDR_WRONG4                             0x20193
 HIDR_WRONG5                             0x20194
 HIDR_WRONG6                             0x20195
- 
-// Dialogs (IDD_*) 
+  
+// Dialogs (IDD_*)  
 HIDD_ABOUTBOX                           0x20064
 HIDD_MUSIC_DIALOG                       0x20066
 HIDD_NOTES                              0x20081
@@ -38,5 +38,5 @@ HIDD_PAGE_RHYTHM                        0x2008E
 HIDD_PAGE_PITCH                         0x2008F
 HIDD_PAGE_SYMBOLS                       0x20090
 HIDD_PAGE_PROGRESS                      0x20092
- 
-// Frame Controls (IDW_*) 
+  
+// Frame Controls (IDW_*)  

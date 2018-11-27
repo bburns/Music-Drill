@@ -77,7 +77,7 @@ BOOL CDialogMain::OnInitDialog()
 	CRect r;
 	m_tbs.GetClientRect(&r);
 	m_tbs.AdjustRect(FALSE, &r);
-	for (i = 0; i < m_nPages; i++)
+	for (int i = 0; i < m_nPages; i++)
 	{
 		CPage* pg = (CPage*) m_aPages.GetAt(i);
 		pg->MoveWindow(&r);

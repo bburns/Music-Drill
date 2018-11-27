@@ -356,7 +356,7 @@ void CCtrlNotes::GetPianoRects(int cx, int cy)
 	// Get black notes
 	int nNote = nNotesWhite;
 	double dPos[] = {0.8, 0.5, 0.3, 0.8, 0.3};
-	for (i = 0; i < nOctaves; i++)
+	for (int i = 0; i < nOctaves; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
